@@ -1,36 +1,29 @@
-# note-requests
+<h1 align="center">📔 note-requests</h1>
 
-#### Description
-Requests：Note Project Reptile
+<p align="center">
+<a target="_blank" href="https://gitee.com/zhouboyi/note-requests">
+<img src="https://img.shields.io/badge/license-MIT-red"> 
+<img src="https://img.shields.io/badge/Python-3.7-blue">
+<img src="https://img.shields.io/badge/Requests-2.27.1-blue">
+<img src="https://img.shields.io/badge/lxml-4.9.0-darkgreen">
+</a>
+</p>
 
-#### Software Architecture
-Software architecture description
+### 📖 Language
 
-#### Installation
+[简体中文](./README.md) | English
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+### ⌛ Start
+
+#### Install third-party libraries
+
+```
+pip3 install requests
+
+pip3 install lxml
+```
 
 #### Instructions
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Contribution
-
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
-
-
-#### Gitee Feature
-
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+* run the `/bin/start.py` file
+* The obtained `JSON` data store in the `datadata.json` file
