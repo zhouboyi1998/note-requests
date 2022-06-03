@@ -1,37 +1,54 @@
-# note-requests
+<h1 align="center">📔 note-requests</h1>
 
-#### 介绍
-Requests：Note Project Reptile
+<p align="center">
+<a target="_blank" href="https://github.com/zhouboyi1998/note-requests"> 
+<img src="https://img.shields.io/github/stars/zhouboyi1998/note-requests?logo=github">
+</a>
+<a target="_blank" href="https://opensource.org/licenses/MIT"> 
+<img src="https://img.shields.io/badge/license-MIT-red"> 
+</a>
+<img src="https://img.shields.io/badge/Python-3.7-blue">
+<img src="https://img.shields.io/badge/Requests-2.27.1-blue">
+<img src="https://img.shields.io/badge/lxml-4.9.0-darkgreen">
+</p>
 
-#### 软件架构
-软件架构说明
+### 📖 语言
 
+简体中文 | [English](./README.en.md)
 
-#### 安装教程
+### ⌛ 开始
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### 创建虚拟环境
 
-#### 使用说明
+#### 安装第三方库
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+```
+pip install requests==2.27.1 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-#### 参与贡献
+pip install lxml==4.9.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+#### pip 国内镜像源
 
+```
+# 清华大学
+https://pypi.tuna.tsinghua.edu.cn/simple
 
-#### 特技
+# 中国科学技术大学
+https://pypi.mirrors.ustc.edu.cn/simple
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+# 阿里云
+https://mirrors.aliyun.com/pypi/simple
+
+# 豆瓣
+https://pypi.douban.com/simple
+```
+
+#### 运行
+
+* 项目根目录下运行命令 `python start.py`
+* 获取到的 `JSON` 数据存放在 `/data/data.json` 文件中
+
+### 📜 开源协议
+
+[MIT License](https://opensource.org/licenses/MIT) Copyright (c) 2022 周博义
