@@ -1,0 +1,1787 @@
+[
+  {
+    "command": "ls",
+    "usage": "ls [参数] [文件]",
+    "params": [
+      {
+        "param": "-a",
+        "description": "显示所有文件及目录 (包括以“.”开头的隐藏文件)"
+      },
+      {
+        "param": "-l",
+        "description": "使用长格式列出文件及目录的详细信息"
+      },
+      {
+        "param": "-r",
+        "description": "将文件以相反次序显示(默认依英文字母次序)"
+      },
+      {
+        "param": "-t",
+        "description": "根据最后的修改时间排序"
+      },
+      {
+        "param": "-A",
+        "description": "同 -a ，但不列出 “.” (当前目录) 及 “..” (父目录)"
+      },
+      {
+        "param": "-S",
+        "description": "根据文件大小排序"
+      },
+      {
+        "param": "-R",
+        "description": "递归列出所有子目录"
+      },
+      {
+        "param": "-d",
+        "description": "查看目录的信息，而不是里面子文件的信息"
+      },
+      {
+        "param": "-i",
+        "description": "输出文件的inode节点信息"
+      },
+      {
+        "param": "-m",
+        "description": "水平列出文件，以逗号间隔"
+      },
+      {
+        "param": "-X",
+        "description": "按文件扩展名排序"
+      },
+      {
+        "param": "--color",
+        "description": "输出信息中带有着色效果"
+      }
+    ]
+  },
+  {
+    "command": "cp",
+    "usage": "cp [参数] 源文件 目标文件",
+    "params": [
+      {
+        "param": "-f",
+        "description": "若目标文件已存在，则会直接覆盖原文件"
+      },
+      {
+        "param": "-i",
+        "description": "若目标文件已存在，则会询问是否覆盖"
+      },
+      {
+        "param": "-p",
+        "description": "保留源文件或目录的所有属性"
+      },
+      {
+        "param": "-r",
+        "description": "递归复制文件和目录"
+      },
+      {
+        "param": "-d",
+        "description": "当复制符号连接时，把目标文件或目录也建立为符号连接，并指向与源文件或目录连接的原始文件或目录"
+      },
+      {
+        "param": "-l",
+        "description": "对源文件建立硬连接，而非复制文件"
+      },
+      {
+        "param": "-s",
+        "description": "对源文件建立符号连接，而非复制文件"
+      },
+      {
+        "param": "-b",
+        "description": "覆盖已存在的文件目标前将目标文件备份"
+      },
+      {
+        "param": "-v",
+        "description": "详细显示cp命令执行的操作过程"
+      },
+      {
+        "param": "-a",
+        "description": "等价于“pdr”选项"
+      }
+    ]
+  },
+  {
+    "command": "mkdir",
+    "usage": "mkdir [参数] 目录",
+    "params": [
+      {
+        "param": "-p",
+        "description": "递归创建多级目录"
+      },
+      {
+        "param": "-m",
+        "description": "建立目录的同时设置目录的权限"
+      },
+      {
+        "param": "-z",
+        "description": "设置安全上下文"
+      },
+      {
+        "param": "-v",
+        "description": "显示目录的创建过程"
+      }
+    ]
+  },
+  {
+    "command": "mv",
+    "usage": "mv [参数] 源文件 目标文件",
+    "params": [
+      {
+        "param": "-i",
+        "description": "若存在同名文件，则向用户询问是否覆盖"
+      },
+      {
+        "param": "-f",
+        "description": "覆盖已有文件时，不进行任何提示"
+      },
+      {
+        "param": "-b",
+        "description": "当文件存在时，覆盖前为其创建一个备份"
+      },
+      {
+        "param": "-u",
+        "description": "当源文件比目标文件新，或者目标文件不存在时，才执行移动此操作"
+      }
+    ]
+  },
+  {
+    "command": "pwd",
+    "usage": "pwd [参数]",
+    "params": [
+      {
+        "param": "-L",
+        "description": "显示逻辑路径"
+      }
+    ]
+  },
+  {
+    "command": "cat",
+    "usage": "cat [参数] 文件",
+    "params": [
+      {
+        "param": "-n",
+        "description": "显示行数（空行也编号）"
+      },
+      {
+        "param": "-s",
+        "description": "显示行数（多个空行算一个编号）"
+      },
+      {
+        "param": "-b",
+        "description": "显示行数（空行不编号）"
+      },
+      {
+        "param": "-E",
+        "description": "每行结束处显示$符号"
+      },
+      {
+        "param": "-T",
+        "description": "将TAB字符显示为 ^I符号"
+      },
+      {
+        "param": "-v",
+        "description": "使用 ^ 和 M- 引用，除了 LFD 和 TAB 之外"
+      },
+      {
+        "param": "-e",
+        "description": "等价于”-vE”组合"
+      },
+      {
+        "param": "-t",
+        "description": "等价于”-vT”组合"
+      },
+      {
+        "param": "-A",
+        "description": "等价于 -vET组合"
+      },
+      {
+        "param": "--help",
+        "description": "显示帮助信息"
+      },
+      {
+        "param": "--version",
+        "description": "显示版本信息"
+      }
+    ]
+  },
+  {
+    "command": "echo",
+    "usage": "echo [参数] 字符串/变量",
+    "params": [
+      {
+        "param": "-n",
+        "description": "不输出结尾的换行符"
+      },
+      {
+        "param": "-e “\\a”",
+        "description": "发出警告音"
+      },
+      {
+        "param": "-e “\\b”",
+        "description": "删除前面的一个字符"
+      },
+      {
+        "param": "-e “\\c”",
+        "description": "结尾不加换行符"
+      },
+      {
+        "param": "-e “\\f”",
+        "description": "换行，光标扔停留在原来的坐标位置"
+      },
+      {
+        "param": "-e “\\n”",
+        "description": "换行，光标移至行首"
+      },
+      {
+        "param": "-e “\\r”",
+        "description": "光标移至行首，但不换行"
+      },
+      {
+        "param": "-E",
+        "description": "禁止反斜杠转移，与-e参数功能相反"
+      },
+      {
+        "param": "—version",
+        "description": "查看版本信息"
+      },
+      {
+        "param": "--help",
+        "description": "查看帮助信息"
+      }
+    ]
+  },
+  {
+    "command": "rm",
+    "usage": "rm [参数] 文件",
+    "params": [
+      {
+        "param": "-f",
+        "description": "强制删除（不二次询问）"
+      },
+      {
+        "param": "-i",
+        "description": "删除前会询问用户是否操作"
+      },
+      {
+        "param": "-r/R",
+        "description": "递归删除"
+      },
+      {
+        "param": "-v",
+        "description": "显示指令的详细执行过程"
+      }
+    ]
+  },
+  {
+    "command": "tail",
+    "usage": "tail [参数] 文件",
+    "params": [
+      {
+        "param": "-c  <N>",
+        "description": "输出文件尾部的N（N为整数）个字节内容"
+      },
+      {
+        "param": "-f",
+        "description": "持续显示文件最新追加的内容"
+      },
+      {
+        "param": "-F  <N>",
+        "description": "与选项“-follow=name”和“--retry”连用时功能相同"
+      },
+      {
+        "param": "-n <N>",
+        "description": "输出文件的尾部N（N位数字）行内容"
+      },
+      {
+        "param": "-m <N>",
+        "description": "输出文件尾部的N（N为整数）个多字节字符内容"
+      },
+      {
+        "param": "--retry",
+        "description": "即是在tail命令启动时，文件不可访问或者文件稍后变得不可访问，都始终尝试打开文件。"
+      },
+      {
+        "param": "--pid=<进程号>",
+        "description": "与“-f”选项连用，当指定的进程号的进程终止后，自动退出tail命令"
+      },
+      {
+        "param": "--help",
+        "description": "显示指令的帮助信息"
+      },
+      {
+        "param": "--version",
+        "description": "显示指令的版本信息"
+      }
+    ]
+  },
+  {
+    "command": "grep",
+    "usage": "grep [参数] 文件",
+    "params": [
+      {
+        "param": "-i",
+        "description": "忽略大小写"
+      },
+      {
+        "param": "-c",
+        "description": "只输出匹配行的数量"
+      },
+      {
+        "param": "-l",
+        "description": "只列出符合匹配的文件名，不列出具体的匹配行"
+      },
+      {
+        "param": "-n",
+        "description": "列出所有的匹配行，显示行号"
+      },
+      {
+        "param": "-h",
+        "description": "查询多文件时不显示文件名"
+      },
+      {
+        "param": "-s",
+        "description": "不显示不存在、没有匹配文本的错误信息"
+      },
+      {
+        "param": "-v",
+        "description": "显示不包含匹配文本的所有行"
+      },
+      {
+        "param": "-w",
+        "description": "匹配整词"
+      },
+      {
+        "param": "-x",
+        "description": "匹配整行"
+      },
+      {
+        "param": "-r",
+        "description": "递归搜索"
+      },
+      {
+        "param": "-q",
+        "description": "禁止输出任何结果，已退出状态表示搜索是否成功"
+      },
+      {
+        "param": "-b",
+        "description": "打印匹配行距文件头部的偏移量，以字节为单位"
+      },
+      {
+        "param": "-o",
+        "description": "与-b结合使用，打印匹配的词据文件头部的偏移量，以字节为单位"
+      },
+      {
+        "param": "-F",
+        "description": "匹配固定字符串的内容"
+      },
+      {
+        "param": "-E",
+        "description": "支持扩展的正则表达式"
+      }
+    ]
+  },
+  {
+    "command": "rpm",
+    "usage": "rpm [参数] 软件包",
+    "params": [
+      {
+        "param": "-a",
+        "description": "查询所有的软件包"
+      },
+      {
+        "param": "-b或-t",
+        "description": "设置包装套件的完成阶段，并指定套件档的文件名称；"
+      },
+      {
+        "param": "-c",
+        "description": "只列出组态配置文件，本参数需配合”-l”参数使用"
+      },
+      {
+        "param": "-d",
+        "description": "只列出文本文件，本参数需配合”-l”参数使用"
+      },
+      {
+        "param": "-e",
+        "description": "卸载软件包"
+      },
+      {
+        "param": "-f",
+        "description": "查询文件或命令属于哪个软件包"
+      },
+      {
+        "param": "-h",
+        "description": "安装软件包时列出标记"
+      },
+      {
+        "param": "-i",
+        "description": "安装软件包"
+      },
+      {
+        "param": "-l",
+        "description": "显示软件包的文件列表"
+      },
+      {
+        "param": "-p",
+        "description": "查询指定的rpm软件包"
+      },
+      {
+        "param": "-q",
+        "description": "查询软件包"
+      },
+      {
+        "param": "-R",
+        "description": "显示软件包的依赖关系"
+      },
+      {
+        "param": "-s",
+        "description": "显示文件状态，本参数需配合”-l”参数使用"
+      },
+      {
+        "param": "-U",
+        "description": "升级软件包"
+      },
+      {
+        "param": "-v",
+        "description": "显示命令执行过程"
+      },
+      {
+        "param": "-vv",
+        "description": "详细显示指令执行过程"
+      }
+    ]
+  },
+  {
+    "command": "find",
+    "usage": "find [路径] [参数]",
+    "params": [
+      {
+        "param": "-name",
+        "description": "匹配名称"
+      },
+      {
+        "param": "-perm",
+        "description": "匹配权限（mode为完全匹配，-mode为包含即可）"
+      },
+      {
+        "param": "-user",
+        "description": "匹配所有者"
+      },
+      {
+        "param": "-group",
+        "description": "匹配所有组"
+      },
+      {
+        "param": "-mtime -n +n",
+        "description": "匹配修改内容的时间（-n指n天以内，+n指n天以前）"
+      },
+      {
+        "param": "-atime -n +n",
+        "description": "匹配访问文件的时间（-n指n天以内，+n指n天以前）"
+      },
+      {
+        "param": "-ctime -n +n",
+        "description": "匹配修改文件权限的时间（-n指n天以内，+n指n天以前）"
+      },
+      {
+        "param": "-nouser",
+        "description": "匹配无所有者的文件"
+      },
+      {
+        "param": "-nogroup",
+        "description": "匹配无所有组的文件"
+      },
+      {
+        "param": "-newer f1 !f2",
+        "description": "匹配比文件f1新但比f2旧的文件"
+      },
+      {
+        "param": "-type b/d/c/p/l/f",
+        "description": "匹配文件类型（后面的字幕字母依次表示块设备、目录、字符设备、管道、链接文件、文本文件）"
+      },
+      {
+        "param": "-size",
+        "description": "匹配文件的大小（+50KB为查找超过50KB的文件，而-50KB为查找小于50KB的文件）"
+      },
+      {
+        "param": "-prune",
+        "description": "忽略某个目录"
+      },
+      {
+        "param": "-exec …… {}\\;",
+        "description": "后面可跟用于进一步处理搜索结果的命令"
+      }
+    ]
+  },
+  {
+    "command": "startx",
+    "usage": "startx [参数]",
+    "params": [
+      {
+        "param": "— -depth <数字>",
+        "description": "指定颜色深度"
+      },
+      {
+        "param": "-m",
+        "description": "当未找到启动脚本时，启动窗口管理器"
+      },
+      {
+        "param": "-r",
+        "description": "当未找到启动脚本时，装入资源文件"
+      },
+      {
+        "param": "-w",
+        "description": "强制启动"
+      },
+      {
+        "param": "-x",
+        "description": "使用startup脚本启动X-windows会话"
+      }
+    ]
+  },
+  {
+    "command": "ps",
+    "usage": "ps [参数]",
+    "params": [
+      {
+        "param": "a",
+        "description": "显示现行终端机下的所有程序，包括其他用户的程序"
+      },
+      {
+        "param": "-A",
+        "description": "显示所有程序"
+      },
+      {
+        "param": "c",
+        "description": "显示每个程序真正的指令名称，而不包含路径"
+      },
+      {
+        "param": "-C <指令名称>",
+        "description": "指定执行指令的名称，并列出该指令的程序的状况"
+      },
+      {
+        "param": "-d",
+        "description": "显示所有程序，但不包括阶段作业管理员的程序"
+      },
+      {
+        "param": "e",
+        "description": "列出程序时，显示每个程序所使用的环境变量"
+      },
+      {
+        "param": "-f",
+        "description": "显示UID,PPIP,C与STIME栏位"
+      },
+      {
+        "param": "f",
+        "description": "用ASCII字符显示树状结构，表达程序间的相互关系"
+      },
+      {
+        "param": "g",
+        "description": "显示现行终端机下的所有程序，包括所属组的程序"
+      },
+      {
+        "param": "-G <群组识别码>",
+        "description": "列出属于该群组的程序的状况"
+      },
+      {
+        "param": "h",
+        "description": "不显示标题列"
+      },
+      {
+        "param": "-H",
+        "description": "显示树状结构，表示程序间的相互关系"
+      },
+      {
+        "param": "-j",
+        "description": "采用工作控制的格式显示程序状况"
+      },
+      {
+        "param": "-l",
+        "description": "采用详细的格式来显示程序状况"
+      },
+      {
+        "param": "L",
+        "description": "列出栏位的相关信息"
+      },
+      {
+        "param": "-m",
+        "description": "显示所有的执行绪"
+      },
+      {
+        "param": "n",
+        "description": "以数字来表示USER和WCHAN栏位"
+      },
+      {
+        "param": "-N",
+        "description": "显示所有的程序，除了执行ps指令终端机下的程序之外"
+      },
+      {
+        "param": "-p <程序识别码>",
+        "description": "指定程序识别码，并列出该程序的状况"
+      },
+      {
+        "param": "r",
+        "description": "只列出现行终端机正在执行中的程序"
+      },
+      {
+        "param": "-s <阶段作业>",
+        "description": "列出隶属该阶段作业的程序的状况"
+      },
+      {
+        "param": "s",
+        "description": "采用程序信号的格式显示程序状况"
+      },
+      {
+        "param": "S",
+        "description": "列出程序时，包括已中断的子程序资料"
+      },
+      {
+        "param": "-t <终端机编号>",
+        "description": "列出属于该终端机的程序的状况"
+      },
+      {
+        "param": "-T",
+        "description": "显示现行终端机下的所有程序"
+      },
+      {
+        "param": "u",
+        "description": "以用户为主的格式来显示程序状况"
+      },
+      {
+        "param": "-U <用户识别码>",
+        "description": "列出属于该用户的程序的状况"
+      },
+      {
+        "param": "U <用户名称>",
+        "description": "列出属于该用户的程序的状况"
+      },
+      {
+        "param": "v",
+        "description": "采用虚拟内存的格式显示程序状况"
+      },
+      {
+        "param": "-V或V",
+        "description": "显示版本信息"
+      },
+      {
+        "param": "-w或w",
+        "description": "采用宽阔的格式来显示程序状况"
+      },
+      {
+        "param": "x",
+        "description": "显示所有程序，不以终端机来区分"
+      },
+      {
+        "param": "X",
+        "description": "采用旧式的Linux i386登陆格式显示程序状况"
+      },
+      {
+        "param": "-y",
+        "description": "配合选项”-l”使用时，不显示F(flag)栏位，并以RSS栏位取代ADDR栏位"
+      },
+      {
+        "param": "--cols <每列字符数>",
+        "description": "设置每列的最大字符数"
+      },
+      {
+        "param": "--headers",
+        "description": "重复显示标题列"
+      },
+      {
+        "param": "--help",
+        "description": "在线帮助"
+      },
+      {
+        "param": "--info",
+        "description": "显示排错信息"
+      },
+      {
+        "param": "--lines <显示列数>",
+        "description": "设置显示画面的列数"
+      }
+    ]
+  },
+  {
+    "command": "uname",
+    "usage": "uname [参数]",
+    "params": [
+      {
+        "param": "-a",
+        "description": "显示系统所有相关信息"
+      },
+      {
+        "param": "-m",
+        "description": "显示计算机硬件架构"
+      },
+      {
+        "param": "-n",
+        "description": "显示主机名称"
+      },
+      {
+        "param": "-r",
+        "description": "显示内核发行版本号"
+      },
+      {
+        "param": "-s",
+        "description": "显示内核名称"
+      },
+      {
+        "param": "-v",
+        "description": "显示内核版本"
+      },
+      {
+        "param": "-p",
+        "description": "显示主机处理器类型"
+      },
+      {
+        "param": "-o",
+        "description": "显示操作系统名称"
+      },
+      {
+        "param": "-i",
+        "description": "显示硬件平台"
+      }
+    ]
+  },
+  {
+    "command": "df",
+    "usage": "df [参数] [对象磁盘/分区]",
+    "params": [
+      {
+        "param": "-a",
+        "description": "显示所有系统文件"
+      },
+      {
+        "param": "-B <块大小>",
+        "description": "指定显示时的块大小"
+      },
+      {
+        "param": "-h",
+        "description": "以容易阅读的方式显示"
+      },
+      {
+        "param": "-H",
+        "description": "以1000字节为换算单位来显示"
+      },
+      {
+        "param": "-i",
+        "description": "显示索引字节信息"
+      },
+      {
+        "param": "-k",
+        "description": "指定块大小为1KB"
+      },
+      {
+        "param": "-l",
+        "description": "只显示本地文件系统"
+      },
+      {
+        "param": "-t <文件系统类型>",
+        "description": "只显示指定类型的文件系统"
+      },
+      {
+        "param": "-T",
+        "description": "输出时显示文件系统类型"
+      },
+      {
+        "param": "-- -sync",
+        "description": "在取得磁盘使用信息前，先执行sync命令"
+      }
+    ]
+  },
+  {
+    "command": "fdisk",
+    "usage": "fdisk [参数] [设备]",
+    "params": [
+      {
+        "param": "-b",
+        "description": "指定每个分区的大小"
+      },
+      {
+        "param": "-l",
+        "description": "列出指定的外围设备的分区表状况"
+      },
+      {
+        "param": "-s",
+        "description": "将指定的分区大小输出到标准输出上，单位为区块"
+      },
+      {
+        "param": "-u",
+        "description": "搭配”-l”参数列表，会用分区数目取代柱面数目，来表示每个分区的起始地址"
+      },
+      {
+        "param": "-v",
+        "description": "显示版本信息"
+      }
+    ]
+  },
+  {
+    "command": "lsblk",
+    "usage": "lsblk [参数]",
+    "params": [
+      {
+        "param": "-a",
+        "description": "显示所有设备"
+      },
+      {
+        "param": "-b",
+        "description": "以字节单位显示设备大小"
+      },
+      {
+        "param": "-d",
+        "description": "不显示 slaves 或 holders"
+      },
+      {
+        "param": "-e",
+        "description": "排除设备"
+      },
+      {
+        "param": "-f",
+        "description": "显示文件系统信息"
+      },
+      {
+        "param": "-h",
+        "description": "显示帮助信息"
+      },
+      {
+        "param": "-i",
+        "description": "仅使用字符"
+      },
+      {
+        "param": "-m",
+        "description": "显示权限信息"
+      },
+      {
+        "param": "-l",
+        "description": "使用列表格式显示"
+      },
+      {
+        "param": "-n",
+        "description": "不显示标题"
+      },
+      {
+        "param": "-o",
+        "description": "输出列"
+      },
+      {
+        "param": "-P",
+        "description": "使用key=”value”格式显示"
+      },
+      {
+        "param": "-r",
+        "description": "使用原始格式显示"
+      },
+      {
+        "param": "-t",
+        "description": "显示拓扑结构信息"
+      }
+    ]
+  },
+  {
+    "command": "hdparm",
+    "usage": "hdparm [参数] 设备名",
+    "params": [
+      {
+        "param": "-a",
+        "description": "设定读取文件时，预先存入块区的分区数"
+      },
+      {
+        "param": "-f",
+        "description": "将内存缓冲区的数据写入硬盘，并清空缓冲区"
+      },
+      {
+        "param": "-g",
+        "description": "显示硬盘的磁轨，磁头，磁区等参数"
+      },
+      {
+        "param": "-t",
+        "description": "评估硬盘读取效率"
+      },
+      {
+        "param": "-I",
+        "description": "直接读取硬盘所提供的硬件规格信息"
+      },
+      {
+        "param": "-X",
+        "description": "设定硬盘的传输模式"
+      }
+    ]
+  },
+  {
+    "command": "vgextend",
+    "usage": "vgextend [参数] 卷组",
+    "params": [
+      {
+        "param": "-d",
+        "description": "调试模式"
+      },
+      {
+        "param": "-t",
+        "description": "仅测试"
+      }
+    ]
+  },
+  {
+    "command": "tftp",
+    "usage": "tftp [参数] 主机",
+    "params": [
+      {
+        "param": "connect",
+        "description": "连接到远程tftp服务器"
+      },
+      {
+        "param": "mode",
+        "description": "文件传输模式"
+      },
+      {
+        "param": "put",
+        "description": "上传文件"
+      },
+      {
+        "param": "get",
+        "description": "下载文件"
+      },
+      {
+        "param": "quit",
+        "description": "退出"
+      },
+      {
+        "param": "verbose",
+        "description": "显示详细的处理信息"
+      },
+      {
+        "param": "trace",
+        "description": "显示包路径"
+      },
+      {
+        "param": "status",
+        "description": "显示当前状态信息"
+      },
+      {
+        "param": "binary",
+        "description": "二进制传输模式"
+      },
+      {
+        "param": "ascii",
+        "description": "ascii 传送模式"
+      },
+      {
+        "param": "rexmt",
+        "description": "设置包传输的超时时间"
+      },
+      {
+        "param": "timeout",
+        "description": "设置重传的超时时间"
+      },
+      {
+        "param": "help",
+        "description": "帮助信息"
+      },
+      {
+        "param": "?",
+        "description": "帮助信息"
+      }
+    ]
+  },
+  {
+    "command": "curl",
+    "usage": "curl [参数] 网址",
+    "params": [
+      {
+        "param": "-o",
+        "description": "指定新的本地文件名"
+      },
+      {
+        "param": "-O",
+        "description": "保留远程文件的原始名"
+      },
+      {
+        "param": "-u",
+        "description": "通过服务端配置的用户名和密码授权访问"
+      },
+      {
+        "param": "-I",
+        "description": "打印HTTP响应头信息"
+      },
+      {
+        "param": "-u",
+        "description": "指定登录账户密码信息"
+      },
+      {
+        "param": "-A",
+        "description": "设置用户代理标头信息"
+      },
+      {
+        "param": "-b",
+        "description": "设置用户cookie信息"
+      },
+      {
+        "param": "-C",
+        "description": "支持断点续传"
+      },
+      {
+        "param": "-s",
+        "description": "静默模式，不输出任何信息"
+      },
+      {
+        "param": "-T",
+        "description": "上传文件"
+      }
+    ]
+  },
+  {
+    "command": "fsck",
+    "usage": "fsck [参数] 文件系统",
+    "params": [
+      {
+        "param": "-a",
+        "description": "自动修复文件系统"
+      },
+      {
+        "param": "-f",
+        "description": "强制检查"
+      },
+      {
+        "param": "-A",
+        "description": "依照/etc/fstab文件来检查全部文件系统"
+      },
+      {
+        "param": "-N",
+        "description": "不执行指令，仅列出实际执行会进行的动作"
+      },
+      {
+        "param": "-r",
+        "description": "采用互动模式，在执行修复时询问问题"
+      },
+      {
+        "param": "-R",
+        "description": "略过指定的文件系统不予检查"
+      },
+      {
+        "param": "-t",
+        "description": "指定要检查的文件系统类型"
+      },
+      {
+        "param": "-T",
+        "description": "执行fsck指令时，不显示标题信息"
+      },
+      {
+        "param": "-V",
+        "description": "显示指令执行过程"
+      }
+    ]
+  },
+  {
+    "command": "lprm",
+    "usage": "lprm [参数] [任务编号]",
+    "params": [
+      {
+        "param": "-E",
+        "description": "与打印服务器连接时强制使用加密"
+      },
+      {
+        "param": "-P",
+        "description": "指定接受打印任务的目标打印机"
+      },
+      {
+        "param": "-U",
+        "description": "指定可选的用户名"
+      }
+    ]
+  },
+  {
+    "command": "ftpwho",
+    "usage": "ftpwho [参数]",
+    "params": [
+      {
+        "param": "-h",
+        "description": "显示帮助信息"
+      },
+      {
+        "param": "-v",
+        "description": "详细模式，输出更多信息"
+      }
+    ]
+  },
+  {
+    "command": "ssh",
+    "usage": "ssh [参数] 远程主机",
+    "params": [
+      {
+        "param": "-1",
+        "description": "强制使用ssh协议版本1"
+      },
+      {
+        "param": "-2",
+        "description": "强制使用ssh协议版本2"
+      },
+      {
+        "param": "-4",
+        "description": "强制使用IPv4地址"
+      },
+      {
+        "param": "-6",
+        "description": "强制使用IPv6地址"
+      },
+      {
+        "param": "-A",
+        "description": "开启认证代理连接转发功能"
+      },
+      {
+        "param": "-a",
+        "description": "关闭认证代理连接转发功能"
+      },
+      {
+        "param": "-b<IP地址>",
+        "description": "使用本机指定的地址作为对位连接的源IP地址"
+      },
+      {
+        "param": "-C",
+        "description": "请求压缩所有数据"
+      },
+      {
+        "param": "-F<配置文件>",
+        "description": "指定ssh指令的配置文件，默认的配置文件为“/etc/ssh/ssh_config”"
+      },
+      {
+        "param": "-f",
+        "description": "后台执行ssh指令"
+      },
+      {
+        "param": "-g",
+        "description": "允许远程主机连接本机的转发端口"
+      },
+      {
+        "param": "-i<身份文件>",
+        "description": "指定身份文件（即私钥文件）"
+      },
+      {
+        "param": "-l<登录名>",
+        "description": "指定连接远程服务器的登录用户名"
+      },
+      {
+        "param": "-N",
+        "description": "不执行远程指令"
+      },
+      {
+        "param": "-o<选项>",
+        "description": "指定配置选项"
+      },
+      {
+        "param": "-p<端口>",
+        "description": "指定远程服务器上的端口"
+      },
+      {
+        "param": "-q",
+        "description": "静默模式，所有的警告和诊断信息被禁止输出"
+      },
+      {
+        "param": "-X",
+        "description": "开启X11转发功能"
+      },
+      {
+        "param": "-x",
+        "description": "关闭X11转发功能"
+      },
+      {
+        "param": "-y",
+        "description": "开启信任X11转发功能"
+      }
+    ]
+  },
+  {
+    "command": "netstat",
+    "usage": "netstat [参数]",
+    "params": [
+      {
+        "param": "-a",
+        "description": "显示所有连线中的Socket"
+      },
+      {
+        "param": "-p",
+        "description": "显示正在使用Socket的程序识别码和程序名称"
+      },
+      {
+        "param": "-l",
+        "description": "仅列出在监听的服务状态"
+      },
+      {
+        "param": "-t",
+        "description": "显示TCP传输协议的连线状况"
+      },
+      {
+        "param": "-u",
+        "description": "显示UDP传输协议的连线状况"
+      },
+      {
+        "param": "-i",
+        "description": "显示网络界面信息表单"
+      },
+      {
+        "param": "-r",
+        "description": "显示路由表信息"
+      },
+      {
+        "param": "-n",
+        "description": "直接使用IP地址，不通过域名服务器"
+      }
+    ]
+  },
+  {
+    "command": "dhclient",
+    "usage": "dhclient 参数 [网卡]",
+    "params": [
+      {
+        "param": "-p",
+        "description": "指定dhcp客户端监听的端口号（默认端口号86）"
+      },
+      {
+        "param": "-d",
+        "description": "总是以前台方式运行程序"
+      },
+      {
+        "param": "-q",
+        "description": "安静模式，不打印任何错误的提示信息"
+      },
+      {
+        "param": "-r",
+        "description": "释放ip地址"
+      },
+      {
+        "param": "-n",
+        "description": "不配置任何接口"
+      },
+      {
+        "param": "-x",
+        "description": "停止正在运行的DHCP客户端，而不释放当前租约，杀死现有的dhclient"
+      },
+      {
+        "param": "-s",
+        "description": "在获取ip地址之前指定DHCP服务器"
+      },
+      {
+        "param": "-w",
+        "description": "即使没有找到广播接口，也继续运行"
+      }
+    ]
+  },
+  {
+    "command": "ping",
+    "usage": "ping [参数] 目标主机",
+    "params": [
+      {
+        "param": "-d",
+        "description": "使用Socket的SO_DEBUG功能"
+      },
+      {
+        "param": "-c",
+        "description": "指定发送报文的次数"
+      },
+      {
+        "param": "-i",
+        "description": "指定收发信息的间隔时间"
+      },
+      {
+        "param": "-I",
+        "description": "使用指定的网络接口送出数据包"
+      },
+      {
+        "param": "-l",
+        "description": "设置在送出要求信息之前，先行发出的数据包"
+      },
+      {
+        "param": "-n",
+        "description": "只输出数值"
+      },
+      {
+        "param": "-p",
+        "description": "设置填满数据包的范本样式"
+      },
+      {
+        "param": "-q",
+        "description": "不显示指令执行过程"
+      },
+      {
+        "param": "-R",
+        "description": "记录路由过程"
+      },
+      {
+        "param": "-s",
+        "description": "设置数据包的大小"
+      },
+      {
+        "param": "-t",
+        "description": "设置存活数值TTL的大小"
+      },
+      {
+        "param": "-v",
+        "description": "详细显示指令的执行过程"
+      }
+    ]
+  },
+  {
+    "command": "ifconfig",
+    "usage": "ifconfig [参数] [网卡设备]",
+    "params": [
+      {
+        "param": "add<地址>",
+        "description": "设置网络设备IPv6的IP地址"
+      },
+      {
+        "param": "del<地址>",
+        "description": "删除网络设备IPv6的IP地址"
+      },
+      {
+        "param": "down",
+        "description": "关闭指定的网络设备"
+      },
+      {
+        "param": "up",
+        "description": "启动指定的网络设备"
+      },
+      {
+        "param": "IP地址",
+        "description": "指定网络设备的IP地址"
+      }
+    ]
+  },
+  {
+    "command": "mount",
+    "usage": "mount [参数] [设备] [挂载点]",
+    "params": [
+      {
+        "param": "-t",
+        "description": "指定挂载类型"
+      },
+      {
+        "param": "-l",
+        "description": "显示已加载的文件系统列表"
+      },
+      {
+        "param": "-h",
+        "description": "显示帮助信息并退出"
+      },
+      {
+        "param": "-V",
+        "description": "显示程序版本"
+      },
+      {
+        "param": "-n",
+        "description": "加载没有写入文件“/etc/mtab”中的文件系统"
+      },
+      {
+        "param": "-r",
+        "description": "将文件系统加载为只读模式"
+      },
+      {
+        "param": "-a",
+        "description": "加载文件“/etc/fstab”中描述的所有文件系统"
+      }
+    ]
+  },
+  {
+    "command": "lspci",
+    "usage": "lspci [参数]",
+    "params": [
+      {
+        "param": "-n",
+        "description": "以数字方式显示PCI厂商和设备代码"
+      },
+      {
+        "param": "-t",
+        "description": "以树状结构显示PCI设备的层次关系"
+      },
+      {
+        "param": "-b",
+        "description": "以总线为中心的视图"
+      },
+      {
+        "param": "-s",
+        "description": "仅显示指定总线插槽的设备和功能块信息"
+      },
+      {
+        "param": "-i",
+        "description": "指定PCI编号列表文件，不使用默认文件"
+      },
+      {
+        "param": "-m",
+        "description": "以机器可读方式显示PCI设备信息"
+      }
+    ]
+  },
+  {
+    "command": "makedev",
+    "usage": "MAKEDEV [参数]",
+    "params": [
+      {
+        "param": "-v",
+        "description": "显示出执行的每一个动作"
+      },
+      {
+        "param": "-n",
+        "description": "并不做真正的更新, 只是显示一下它的执行效果"
+      },
+      {
+        "param": "-d",
+        "description": "删除设备文件"
+      }
+    ]
+  },
+  {
+    "command": "sensors",
+    "usage": "sensors",
+    "params": []
+  },
+  {
+    "command": "setleds",
+    "usage": "setleds [参数]",
+    "params": [
+      {
+        "param": "-F",
+        "description": "设定虚拟主控台的状态"
+      },
+      {
+        "param": "-D",
+        "description": "改变虚拟主控台的状态和预设的状态"
+      },
+      {
+        "param": "-L",
+        "description": "直接改变 LED 显示的状态"
+      },
+      {
+        "param": "+num/-num",
+        "description": "将数字键打开或关闭"
+      },
+      {
+        "param": "+caps/-caps",
+        "description": "把大小写键打开或关闭"
+      },
+      {
+        "param": "+scroll /-scroll",
+        "description": "把选项键打开或关闭"
+      }
+    ]
+  },
+  {
+    "command": "zip",
+    "usage": "zip 参数 文件",
+    "params": [
+      {
+        "param": "-q",
+        "description": "不显示指令执行过程"
+      },
+      {
+        "param": "-r",
+        "description": "递归处理，将指定目录下的所有文件和子目录一并处理"
+      },
+      {
+        "param": "-z",
+        "description": "替压缩文件加上注释"
+      },
+      {
+        "param": "-v",
+        "description": "显示指令执行过程或显示版本信息"
+      },
+      {
+        "param": "-d",
+        "description": "更新压缩包内文件"
+      },
+      {
+        "param": "-n<字尾字符串>",
+        "description": "不压缩具有特定字尾字符串的文件"
+      }
+    ]
+  },
+  {
+    "command": "unzip",
+    "usage": "unzip [参数] 压缩包",
+    "params": [
+      {
+        "param": "-l",
+        "description": "显示压缩文件内所包含的文件"
+      },
+      {
+        "param": "-v",
+        "description": "执行时显示详细的信息"
+      },
+      {
+        "param": "-c",
+        "description": "将解压缩的结果显示到屏幕上，并对字符做适当的转换"
+      },
+      {
+        "param": "-n",
+        "description": "解压缩时不要覆盖原有的文件"
+      },
+      {
+        "param": "-j",
+        "description": "不处理压缩文件中原有的目录路径"
+      }
+    ]
+  },
+  {
+    "command": "gzip",
+    "usage": "gzip [参数] 文件",
+    "params": [
+      {
+        "param": "-a",
+        "description": "使用ASCII文字模式"
+      },
+      {
+        "param": "-d",
+        "description": "解开压缩文件"
+      },
+      {
+        "param": "-f",
+        "description": "强行压缩文件"
+      },
+      {
+        "param": "-k",
+        "description": "保留原文件"
+      },
+      {
+        "param": "-l",
+        "description": "列出压缩文件的相关信息"
+      },
+      {
+        "param": "-c",
+        "description": "把压缩后的文件输出到标准输出设备，不去更动原始文件"
+      },
+      {
+        "param": "-r",
+        "description": "递归处理，将指定目录下的所有文件及子目录一并处理"
+      },
+      {
+        "param": "-q",
+        "description": "不显示警告信息"
+      }
+    ]
+  },
+  {
+    "command": "zipinfo",
+    "usage": "zipinfo [参数] 压缩包",
+    "params": [
+      {
+        "param": "-1",
+        "description": "只列出文件名称"
+      },
+      {
+        "param": "-h",
+        "description": "只列出压缩文件名称"
+      },
+      {
+        "param": "-l",
+        "description": "列出原始文件的大小"
+      },
+      {
+        "param": "-m",
+        "description": "列出每个文件的压缩率"
+      },
+      {
+        "param": "-M",
+        "description": "以分页形式显示内容"
+      },
+      {
+        "param": "-s",
+        "description": "列出压缩文件内容"
+      },
+      {
+        "param": "-t",
+        "description": "列出压缩前后大小及压缩率"
+      },
+      {
+        "param": "-T",
+        "description": "列出每个文件的日期时间"
+      },
+      {
+        "param": "-v",
+        "description": "详细显示每一个文件的信息"
+      },
+      {
+        "param": "-x<范本样式>",
+        "description": "不列出符合条件的文件的信息"
+      },
+      {
+        "param": "-z",
+        "description": "将注释显示出来"
+      }
+    ]
+  },
+  {
+    "command": "gunzip",
+    "usage": "gunzip [参数] 压缩包",
+    "params": [
+      {
+        "param": "-a",
+        "description": "使用ASCII文字模式"
+      },
+      {
+        "param": "-c",
+        "description": "把解压后的文件输出到标准输出设备"
+      },
+      {
+        "param": "-f",
+        "description": "强行解开压缩文件，不理会文件名称或硬连接是否存在以及该文件是否为符号连接"
+      },
+      {
+        "param": "-h",
+        "description": "在线帮助"
+      },
+      {
+        "param": "-l",
+        "description": "列出压缩文件的相关信息"
+      },
+      {
+        "param": "-L",
+        "description": "显示版本与版权信息"
+      },
+      {
+        "param": "-n",
+        "description": "解压缩时，若压缩文件内含有远来的文件名称及时间戳记，则将其忽略不予处理"
+      },
+      {
+        "param": "-N",
+        "description": "解压缩时，若压缩文件内含有原来的文件名称及时间戳记，则将其回存到解开的文件上"
+      },
+      {
+        "param": "-q",
+        "description": "不显示警告信息"
+      },
+      {
+        "param": "-r",
+        "description": "递归处理，将指定目录下的所有文件及子目录一并处理"
+      },
+      {
+        "param": "-S<压缩字尾字符串>",
+        "description": "更改压缩字尾字符串"
+      },
+      {
+        "param": "-t",
+        "description": "测试压缩文件是否正确无误"
+      },
+      {
+        "param": "-v",
+        "description": "显示指令执行过程"
+      },
+      {
+        "param": "-V",
+        "description": "显示版本信息"
+      }
+    ]
+  },
+  {
+    "command": "hash",
+    "usage": "hash [参数] [目录]",
+    "params": [
+      {
+        "param": "-d",
+        "description": "在哈希表中清除记录"
+      },
+      {
+        "param": "-l",
+        "description": "显示哈希表中的命令"
+      },
+      {
+        "param": "-p<指令>",
+        "description": "将具有完整路径的命令加入到哈希表中"
+      },
+      {
+        "param": "-r",
+        "description": "清除哈希表中的记录"
+      },
+      {
+        "param": "-t",
+        "description": "显示哈希表中命令的完整路径"
+      }
+    ]
+  },
+  {
+    "command": "wait",
+    "usage": "wait 进程号/作业号",
+    "params": [
+      {
+        "param": "NUM 或%NUM",
+        "description": "进程号 或 作业号"
+      }
+    ]
+  },
+  {
+    "command": "bc",
+    "usage": "bc [选项]",
+    "params": [
+      {
+        "param": "-i",
+        "description": "强制进入交互式模式"
+      },
+      {
+        "param": "-l",
+        "description": "定义使用的标准数学库"
+      },
+      {
+        "param": "-w",
+        "description": "定义使用的标准数学库"
+      },
+      {
+        "param": "-q",
+        "description": "打印正常的GNU bc环境信息"
+      }
+    ]
+  },
+  {
+    "command": "history",
+    "usage": "history [参数]",
+    "params": [
+      {
+        "param": "-a",
+        "description": "写入命令记录"
+      },
+      {
+        "param": "-c",
+        "description": "清空命令记录"
+      },
+      {
+        "param": "-d",
+        "description": "删除指定序号的命令记录"
+      },
+      {
+        "param": "-n",
+        "description": "读取命令记录"
+      },
+      {
+        "param": "-r",
+        "description": "读取命令记录到缓冲区"
+      },
+      {
+        "param": "-s",
+        "description": "将指定的命令添加到缓冲区"
+      },
+      {
+        "param": "-w",
+        "description": "将缓冲区信息写入到历史文件"
+      }
+    ]
+  },
+  {
+    "command": "rmmod",
+    "usage": "rmmod [参数] 模块名称",
+    "params": [
+      {
+        "param": "-a",
+        "description": "删除所有目前不需要的模块"
+      },
+      {
+        "param": "-s",
+        "description": "把信息输出至日志服务中"
+      },
+      {
+        "param": "-v",
+        "description": "显示指令执行的详细信息"
+      },
+      {
+        "param": "-f",
+        "description": "强制移除模块"
+      },
+      {
+        "param": "-w",
+        "description": "确认模块能被删除时再操作"
+      }
+    ]
+  }
+]
