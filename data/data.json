@@ -123,7 +123,7 @@
   },
   {
     "command": "mv",
-    "usage": "mv  [参数] 源文件 目标文件",
+    "usage": "mv [参数] 源文件 目标文件",
     "params": [
       {
         "param": "-i",
@@ -145,7 +145,7 @@
   },
   {
     "command": "pwd",
-    "usage": "pwd  [参数]",
+    "usage": "pwd [参数]",
     "params": [
       {
         "param": "-L",
@@ -276,20 +276,16 @@
     "usage": "tail [参数] 文件",
     "params": [
       {
-        "param": "",
-        "description": "-c"
-      },
-      {
-        "param": "输出文件尾部的N（N为整数）个字节内容",
-        "description": ""
+        "param": "-c  <N>",
+        "description": "输出文件尾部的N（N为整数）个字节内容"
       },
       {
         "param": "-f",
         "description": "持续显示文件最新追加的内容"
       },
       {
-        "param": "",
-        "description": "-F  <N>"
+        "param": "-F  <N>",
+        "description": "与选项“-follow=name”和“--retry”连用时功能相同"
       },
       {
         "param": "与选项“-follow=name”和“--retry”连用时功能相同",
@@ -300,24 +296,24 @@
         "description": "输出文件的尾部N（N位数字）行内容"
       },
       {
+        "param": "-m <N>",
+        "description": "输出文件尾部的N（N为整数）个多字节字符内容"
+      },
+      {
         "param": "--retry",
         "description": "即是在tail命令启动时，文件不可访问或者文件稍后变得不可访问，都始终尝试打开文件。"
       },
       {
-        "param": "",
-        "description": "--pid=<进程号>"
-      },
-      {
-        "param": "与“-f”选项连用，当指定的进程号的进程终止后，自动退出tail命令",
-        "description": ""
+        "param": "--pid=<进程号>",
+        "description": "与“-f”选项连用，当指定的进程号的进程终止后，自动退出tail命令"
       },
       {
         "param": "--help",
         "description": "显示指令的帮助信息"
       },
       {
-        "param": "",
-        "description": "--version"
+        "param": "--version",
+        "description": "显示指令的版本信息"
       }
     ]
   },
@@ -1564,7 +1560,7 @@
   },
   {
     "command": "zipinfo",
-    "usage": "zipinfo [参数]",
+    "usage": "zipinfo [参数] 压缩包",
     "params": [
       {
         "param": "-1",
@@ -1592,15 +1588,15 @@
       },
       {
         "param": "-t",
-        "description": "列出压缩文件内所包含的文件数目，压缩前后大小及压缩率"
+        "description": "列出压缩前后大小及压缩率"
       },
       {
         "param": "-T",
-        "description": "列出压缩文件内每个文件的日期时间"
+        "description": "列出每个文件的日期时间"
       },
       {
         "param": "-v",
-        "description": "详细显示压缩文件内每一个文件的信息"
+        "description": "详细显示每一个文件的信息"
       },
       {
         "param": "-x<范本样式>",
