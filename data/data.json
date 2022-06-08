@@ -288,10 +288,6 @@
         "description": "与选项“-follow=name”和“--retry”连用时功能相同"
       },
       {
-        "param": "与选项“-follow=name”和“--retry”连用时功能相同",
-        "description": ""
-      },
-      {
         "param": "-n <N>",
         "description": "输出文件的尾部N（N位数字）行内容"
       },
