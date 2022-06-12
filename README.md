@@ -27,3 +27,7 @@ pip3 install lxml
 
 * 运行 `/bin/start.py` 文件
 * 获取到的 `JSON` 数据存放在 `/data/data.json` 文件中
+
+### 📜 开源协议
+
+[MIT License](https://opensource.org/licenses/MIT) Copyright (c) 2022 周博义

@@ -27,3 +27,7 @@ pip3 install lxml
 
 * run the `/bin/start.py` file
 * The obtained `JSON` data store in the `datadata.json` file
+
+### 📜 Licence
+
+[MIT License](https://opensource.org/licenses/MIT) Copyright (c) 2022 周博义
