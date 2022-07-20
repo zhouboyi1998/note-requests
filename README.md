@@ -1,12 +1,15 @@
 <h1 align="center">📔 note-requests</h1>
 
 <p align="center">
-<a target="_blank" href="https://gitee.com/zhouboyi/note-requests">
+<a target="_blank" href="https://github.com/zhouboyi1998/note-requests"> 
+<img src="https://img.shields.io/github/stars/zhouboyi1998/note-requests?logo=github">
+</a>
+<a target="_blank" href="https://opensource.org/licenses/MIT"> 
 <img src="https://img.shields.io/badge/license-MIT-red"> 
+</a>
 <img src="https://img.shields.io/badge/Python-3.7-blue">
 <img src="https://img.shields.io/badge/Requests-2.27.1-blue">
 <img src="https://img.shields.io/badge/lxml-4.9.0-darkgreen">
-</a>
 </p>
 
 ### 📖 语言
